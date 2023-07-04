@@ -11,10 +11,18 @@ Rails.application.configure do
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
-
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
   # Full error reports are disabled and caching is turned on.
+  config.action_mailer.default_url_options = { host: 'https://budget-app-ai3m.onrender.com' }
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'smtp.elasticemail.com',
+    port: 2525,
+    user_name: 'zewdu.erkyhun@email.com',
+    password: 'A350E078773CC80CC9C0C4DC356FC8B698D7',
+  }
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
   # or in config/master.key. This key is used to decrypt credentials (and other encrypted files).
@@ -22,7 +30,7 @@ Rails.application.configure do
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
-  config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
+  config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present? || ENV['RENDER'].present?
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
@@ -38,7 +46,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = "X-Accel-Redirect" # for NGINX
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
-  config.active_storage.service = :local
+  config.active_storage.service = :cloudinary
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
@@ -60,7 +68,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter     = :resque
-  # config.active_job.queue_name_prefix = "wallet_wizard_production"
+  # config.active_job.queue_name_prefix = "budget_app_production"
 
   config.action_mailer.perform_caching = false
 
