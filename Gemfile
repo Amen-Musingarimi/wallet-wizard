@@ -24,7 +24,7 @@ gem 'bullet', group: 'development'
 group :development, :test do
   gem 'capybara'
   gem 'rails-controller-testing'
-  gem 'rspec-rails', '>= 3.9.0'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'webdrivers'
 end
