@@ -20,8 +20,8 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address: 'smtp.elasticemail.com',
     port: 2525,
-    user_name: 'zewdu.erkyhun@email.com',
-    password: 'A350E078773CC80CC9C0C4DC356FC8B698D7',
+    user_name: 'takudzwamusinga@gmail.com',
+    password: 'Takudzwa95!',
   }
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]

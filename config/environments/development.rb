@@ -10,14 +10,10 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
   # Do not eager load code on boot.
   config.eager_load = false
-  config.action_mailer.delivery_method = :smtp
 
-  config.action_mailer.smtp_settings = {
-    address: 'smtp.elasticemail.com',
-    port: 2525,
-    user_name: 'zewdu.erkyhun@email.com',
-    password: 'A350E078773CC80CC9C0C4DC356FC8B698D7',
-  }
+  config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.perform_deliveries = true
+
 
   # Show full error reports.
   config.consider_all_requests_local = true
