@@ -52,7 +52,7 @@
 
 - [Live Demo Link](https://wallet-wizard-p3kd.onrender.com)
 
-- [Live Video Demo](https://www.loom.com/share/8bed75e009284673a2b7a3b791bb584b)
+- [Live Video Demo](https://www.loom.com/share/9a763cbd3175493aa16c8e8203f968bf?sid=09f529bf-e378-4dd4-972a-a40ea4c78135)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,6 +176,6 @@ I would like to thank [ Gregoire Vella](https://www.behance.net/gregoirevella), 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](LICENSE.md) licensed.
+This project is [MIT](LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

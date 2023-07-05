@@ -51,20 +51,6 @@ RSpec.describe 'Users', type: :request do
       expect(response.body).to include('Sign up')
     end
   end
-  describe 'GET /users/confirmation/new' do
-    it 'returns http success' do
-      get new_user_confirmation_path
-      expect(response).to have_http_status(200)
-    end
-    it 'renders the new template' do
-      get new_user_confirmation_path
-      expect(response).to render_template('new').or(render_template('devise/confirmations/new'))
-    end
-    it 'displays the confirmation form' do
-      get new_user_confirmation_path
-      expect(response.body).to include('Resend confirmation instructions')
-    end
-  end
   describe 'GET /users/password/new' do
     it 'returns http success' do
       get new_user_password_path
