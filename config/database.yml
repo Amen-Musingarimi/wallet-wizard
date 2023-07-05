@@ -19,7 +19,4 @@ test:
 
 production:
   <<: *default
-  database: wallet_wizard_production
-  username: postgres
-  password: Takudzwa95!
-  host: localhost
+  url: <%= ENV['DATABASE_URL'] %>

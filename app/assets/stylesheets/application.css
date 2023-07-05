@@ -14,6 +14,12 @@
  *= require_self
  */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 button {
   border: none;
   padding: 0;
@@ -94,28 +100,26 @@ main {
   padding-right: 5px;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   margin-top: 25px;
   width: 97%;
   border: none;
   background-color: #43a047;
-  box-shadow:
-    0 0 0 5px #43a047,
-    inset 0 0 0 1px #fff;
+  box-shadow: 0 0 0 5px #43a047, inset 0 0 0 1px #fff;
   color: #fff;
   padding: 10px 20px;
   margin-bottom: 10px;
 }
 
-input[type="email"]::placeholder {
+input[type='email']::placeholder {
   color: #989da3;
 }
 
-input[type="text"]::placeholder {
+input[type='text']::placeholder {
   color: #989da3;
 }
 
-input[type="password"]::placeholder {
+input[type='password']::placeholder {
   color: #989da3;
 }
 
@@ -194,9 +198,7 @@ hr {
   width: 97%;
   border: none;
   background-color: #43a047;
-  box-shadow:
-    0 0 0 5px #43a047,
-    inset 0 0 0 1px #fff;
+  box-shadow: 0 0 0 5px #43a047, inset 0 0 0 1px #fff;
   color: #fff;
   padding: 10px 20px;
   margin-bottom: 20px;
